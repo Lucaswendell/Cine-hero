@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cine Heroi | FeedBack</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../css/foundation.css">
+    <link rel="stylesheet" href="../css/slideout.css">
+    <link rel="stylesheet" href="../css/fakeLoader.css">
+    <link rel="stylesheet" href="../css/jquery.sweet-modal.min.css">
+    <link rel="stylesheet" href="../css/meu.css">
+</head>
+
+<body>
+    <div id="fakeloder"></div>
+    <nav id="menu">
+            <ul class="vertical menu accordion-menu" data-accordion-menu>
+                    <li>
+                        <a href="../index.html">HOME</a>
+                    </li>
+                </ul>
+    </nav>
+    <main id="panel">
+        <div class="hero-full-screen">
+            <div class="top-content-section">
+                <div class="top-bar">
+                    <div class="top-bar-left">
+                        <!-- responsivo   -->
+                        <ul class="menu hide-for-medium ">
+                            <!-- botao responsivo -->
+                            <li>
+                                <button class="toggle-button">
+                                    <img src="../imagens/menu.png" alt="" width="50px">
+                                </button>
+                            </li>
+                            <li class=" float-center ">
+                                <p class="h3" style="color: #ffffff;">Cine Heroi</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="middle-content-section">
+                <h1>Fique por dentro das novidades
+                    <br> sobre o seu heroi favorito</h1>
+            </div>
+            <div class="bottom-content-section" data-magellan data-threshold="0">
+                <a href="#main-content-section">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z"
+                        />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <br>
+        <!-- formulario de FeedBack -->
+        <div id="main-content-section" data-magellan-target="main-content-section">
+            <form action="#" method="post">
+                <div class="container">
+                    <legend>FeedBack</legend>
+                    <label for="nome">Nome:
+                        <input type="text" placeholder="ex: Peter" id="nome">
+                    </label>
+
+                    <label for="Sobrenome">Sobrenome:
+                        <input type="text" placeholder="ex: Parker" id="Sobrenome">
+                    </label>
+
+                    <label for="E-mail">E-mail:
+                        <input type="email" placeholder="ex: homemaranha@gmail.com" id="E-mail">
+                    </label>
+                    <label for="text">Conte-nos como foi sua experiência com o CINE HEROI?</label>
+                    <textarea name="" id="text" cols="30" rows="10" placeholder=""></textarea>
+                    <button class="button" data-tooltip data-position="top" data-alignment="center" type="button" tabindex="1" title="Ao enviar você concorda com os termos">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+</body>
+<!-- javascript -->
+<script src="../js/jquery.min.js"></script>
+<script src="../js/slideout.min.js"></script>
+<script src="../js/vendor/foundation.min.js"></script>
+<script src="../js/jquery.scrollUp.js"></script>
+<script src="../js/fakeLoader.js"></script>
+<script src="../js/jquery.sweet-modal.min.js"></script>
+<script src="../js/meu.js"></script>
+
+</html>

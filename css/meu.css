@@ -1,0 +1,340 @@
+/* Image style */
+.social-footer {
+    padding: 1rem;
+    background: #8a8a8a;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: initial;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  .social-footer .social-footer-icons li:last-of-type {
+    margin-right: 0;
+  }
+  
+  .social-footer .social-footer-icons .fa {
+    font-size: 1.3rem;
+    color: #fefefe;
+  }
+  
+  .social-footer .social-footer-icons .fa:hover {
+    color: #4a4a4a;
+    transition: color 0.3s ease-in;
+  }
+  
+  
+#scrollUp {
+    background-image: url("../imagens/top.png");
+    background-repeat: no-repeat;
+    bottom: 20px;
+    right: 20px;
+    width: 38px;    /* Width of image */
+    height: 38px;   /* Height of image */
+}
+.parallax-window {
+    min-height: 450px;
+    background: transparent;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+#menu{
+    background: #111;
+}
+
+.slideout-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    width: 256px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    display: none;
+}
+
+.slideout-panel {
+    position: relative;
+    z-index: 1;
+    will-change: transform;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+    overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+    display: block;
+}
+
+/* ----------------------------------------
+Labs page main styles
+---------------------------------------- */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+pre {
+    margin: 0;
+    overflow: scroll;
+    background-color: #eee;
+
+    padding: 10px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+pre .cmt {
+    /* pre comment */
+    color: #aaa;
+}
+
+pre .opt {
+    /* pre option */
+    font-weight: bold;
+}
+
+pre .val {
+    /* pre value */
+    font-style: italic;
+}
+
+code {
+    background-color: #eee;
+    color: #333;
+    display: inline-block;
+    padding: 1px 5px;
+}
+
+body {
+    font: 1em/1.8 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #121212;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #F66169;
+    text-decoration: none;
+}
+
+h2 {
+    margin-top: 2.5em;
+    padding-bottom: .2em;
+    border-bottom: 1px solid #eee;
+}
+
+p {
+    color: #666;
+}
+
+.container {
+    width: 80%;
+    max-width: 620px;
+    margin: auto;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #222;
+    color: #fff;
+    border-bottom: #F66169 3px solid;
+}
+
+.logo {
+    width: 120px;
+    float: left;
+    margin-left: 30px;
+    color: #FAEFDE;
+    font-weight: bold;
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
+
+.logo:hover {
+    color: #fff;
+}
+
+.view-article {
+    display: block;
+    text-align: center;
+    background-color: #F66169;
+    color: #FAEFDE;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    float: right;
+    margin-right: 30px;
+    margin-top: 8px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
+
+.view-article:hover {
+    color: #111;
+    background-color: #fff;
+}
+
+.light {
+    color: #ccc;
+    font-size: 14px;
+}
+
+
+
+/* ----------------------------------------
+Lab specific: scrollUp
+---------------------------------------- */
+
+.themes {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    float: left;
+    width: 100%;
+}
+
+.themes li {
+    text-align: center;
+    display: block;
+    float: left;
+    width: 22%;
+    margin-left: 4%;
+}
+
+.themes li.first {
+    margin-left: 0;
+}
+
+.themes li a {
+    display: block;
+    padding: 10px;
+    background-color: #444;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    color: #eee;
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+}
+
+.themes li a:hover,
+.themes li a.active {
+    background-color: #F66169;
+    color: #FAEFDE;
+}
+
+#toggleActive {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    background-color: #444;
+    color: #eee;
+    font-size: 14px;
+    cursor: pointer;
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+#toggleActive.active {
+    background-color: #F66169;
+    color: #FAEFDE;
+}
+
+#scrollUp-active {
+    display: none;
+}
+
+.hero-full-screen {
+    height: 100vh;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    background: url("../imagens/marveldc.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.hero-full-screen .middle-content-section {
+    text-align: center;
+    color: #fefefe;
+}
+
+.hero-full-screen .top-content-section {
+    width: 100%;
+}
+
+.hero-full-screen .bottom-content-section {
+    padding: 1rem;
+}
+
+.hero-full-screen .bottom-content-section svg {
+    height: 3.75rem;
+    width: 3.75rem;
+    fill: #fefefe;
+}
+
+.hero-full-screen .top-bar {
+    background: transparent;
+}
+
+.hero-full-screen .top-bar .menu {
+    background: transparent;
+}
+
+.hero-full-screen .top-bar .menu-text {
+    color: #fefefe;
+}
+
+.hero-full-screen .top-bar .menu li {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.hero-full-screen .top-bar .menu a {
+    color: #fefefe;
+    font-weight: bold;
+}
