@@ -1,4 +1,12 @@
-/* Image style */
+@media screen and (max-width: 768px){
+    .flex{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
 .diferente{
     color: #da2d2d;
     transition: all 0.5s;

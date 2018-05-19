@@ -60,85 +60,95 @@
         <br>
         <!-- formulario de FeedBack -->
         <div id="main-content-section" data-magellan-target="main-content-section">
-            <form action="#" method="post">
+            <form action="feedback.html" method="POST" id="form">
                 <div class="container">
                     <legend>FeedBack</legend>
                     <label for="nome">Nome:
+                        <b style="color:red">*</b>
                         <input type="text" placeholder="ex: Peter" id="nome">
+                        <span id="nomeS"></span>
                     </label>
 
-                    <label for="Sobrenome">Sobrenome:
-                        <input type="text" placeholder="ex: Parker" id="Sobrenome">
+                    <label for="sobrenome">Sobrenome:
+                        <input type="text" placeholder="ex: Parker" id="sobrenome">
                     </label>
 
                     <label for="E-mail">E-mail:
+                        <b style="color:red">*</b>
                         <input type="email" placeholder="ex: homemaranha@gmail.com" id="E-mail">
+                        <span id="emailS"></span>
                     </label>
-                    <label for="text">Envie sua duvida ou dê sugestões de como melhorar o CINE HERO.</label>
-                    <textarea name="" id="text" cols="30" rows="10" placeholder=""></textarea>
-                    <button class="button" data-tooltip data-position="top" data-alignment="center" type="button" tabindex="1" title="Ao enviar você concorda com os termos">Enviar</button>
+                    <label for="text">Envie sua duvida ou sugestão de como melhorar o CINE HERO.
+                        <b style="color:red">*</b>
+                        <textarea name="" id="text" cols="30" rows="10" placeholder=""></textarea>
+                    </label>
+                    <input type="submit" value="enviar" class="button">
                 </div>
             </form>
         </div>
         <!-- rodapé -->
-
         <footer class="social-footer">
             <div class="social-footer-left">
-                <h4>Criadores</h4>
-                <a href="#">
-                    <img class="logo" data-tooltip data-position="top" data-alignment="center" type="button" tabindex="1" title="Keisy Barbosa"
-                        width="50px" height="50px" src="imagens/heroisdc.gif" to>
-                </a>
-                <a href="#">
-                    <img class="logo" width="50px" height="50px" src="imagens/heroisdc.gif" data-tooltip data-position="top" data-alignment="center"
-                        type="button" tabindex="1" title="Lucas Wendel">
-                </a>
-                <a href="#">
-                    <img class="logo" width="50px" height="50px" src="imagens/heroisdc.gif" data-tooltip data-position="top" data-alignment="center"
-                        type="button" tabindex="1" title="Francisco Túlio">
-                </a>
-                <a href="#">
-                    <img class="logo" width="50px" height="50px" src="imagens/heroisdc.gif" data-tooltip data-position="top" data-alignment="center"
-                        type="button" tabindex="1" title="Giselle Kelve">
-                </a>
-                <a href="#">
-                    <img class="logo" width="50px" height="50px" src="imagens/heroisdc.gif" data-tooltip data-position="top" data-alignment="center"
-                        type="button" tabindex="1" title="Jessica Costa">
-                </a>
-                <a href="#">
-                    <img class="logo" width="50px" height="50px" src="imagens/heroisdc.gif" data-tooltip data-position="top" data-alignment="center"
-                        type="button" tabindex="1" title="Leonardo Felix">
-                </a>
-                <a href="#">
-                    <img class="logo" width="50px" height="50px" src="imagens/heroisdc.gif" data-tooltip data-position="top" data-alignment="center"
-                        type="button" tabindex="1" title="Yasmim Rocha">
-                </a>
+                <div class="flex">
+                    <h4>Criadores</h4>
+
+                    <a href="#">
+                        <img class="logo" data-tooltip data-position="top" data-alignment="center" type="button" tabindex="1" title="Keisy Barbosa"
+                            width="50px" height="50px" src="../imagens/heroisdc.gif" to>
+                    </a>
+                    <a href="#">
+                        <img class="logo" width="50px" height="50px" src="../imagens/heroisdc.gif" data-tooltip data-position="top" data-alignment="center"
+                            type="button" tabindex="1" title="Lucas Wendel">
+                    </a>
+                    <a href="#">
+                        <img class="logo" width="50px" height="50px" src="../imagens/heroisdc.gif" data-tooltip data-position="top" data-alignment="center"
+                            type="button" tabindex="1" title="Francisco Túlio">
+                    </a>
+                    <a href="#">
+                        <img class="logo" width="50px" height="50px" src="../imagens/heroisdc.gif" data-tooltip data-position="top" data-alignment="center"
+                            type="button" tabindex="1" title="Giselle Kelve">
+                    </a>
+                    <a href="#">
+                        <img class="logo" width="50px" height="50px" src="../imagens/heroisdc.gif" data-tooltip data-position="top" data-alignment="center"
+                            type="button" tabindex="1" title="Jessica Costa">
+                    </a>
+                    <a href="#">
+                        <img class="logo" width="50px" height="50px" src="../imagens/heroisdc.gif" data-tooltip data-position="top" data-alignment="center"
+                            type="button" tabindex="1" title="Leonardo Felix">
+                    </a>
+                    <a href="#">
+                        <img class="logo" width="50px" height="50px" src="../imagens/heroisdc.gif" data-tooltip data-position="top" data-alignment="center"
+                            type="button" tabindex="1" title="Yasmim Rocha">
+                    </a>
+
+                    <br>
+                    <h4>Mais informações</h4>
+                    <p style="color: #000000;">Texto a ser colocado</p>
+
+                </div>
                 <br>
-                <h4>Mais informações</h4>
-                <p style="color: #000000;">Que da susgestão ou tirar alguma duvida? Acesse a nossa pagina de
-                    <a href="paginas/feedback.html" class="diferente">feedback</a>. Site feito por alunos da EEEP Paulo Petrola.</p>
+                <div class="social-footer-icons">
+                    <h5>Acesse as nossas redes socias</h5>
+                    <ul class="menu simple">
+                        <li>
+                            <a href="https://www.facebook.com/">
+                                <img src="../imagens/facebook.png" width="25px" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/?hl=en">
+                                <img src="../imagens/instagram.png" width="40px">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/?lang=en">
+                                <img src="../imagens/tweeter.png" alt="" width="30px">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <br>
-            <div class="social-footer-icons">
-                <h5>Acesse as nossas redes socias</h5>
-                <ul class="menu simple">
-                    <li>
-                        <a href="https://www.facebook.com/">
-                            <img src="imagens/facebook.png" width="25px" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/?hl=en">
-                            <img src="imagens/instagram.png" width="40px">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/?lang=en">
-                            <img src="imagens/tweeter.png" alt="" width="30px">
-                        </a>
-                    </li>
-                </ul>
-            </div>
+
         </footer>
 
     </main>

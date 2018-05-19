@@ -1,7 +1,7 @@
 // foundation
-$(document).foundation(); 
+$(document).foundation();
 //scroll UP
-$(function () { 
+$(function () {
     $.scrollUp({
         scrollDistance: 700,
         animationSpeed: 100,
@@ -18,7 +18,7 @@ $("#fakeloder").fakeLoader({
     bgColor: "#000",
 });
 //paralax
-$('.parallax-window').parallax(); 
+$('.parallax-window').parallax();
 var slideout = new Slideout({
     'panel': document.getElementById("panel"),
     'menu': document.getElementById("menu"),
@@ -57,17 +57,35 @@ $("#trailer-homemForm").click(function () {
         theme: $.sweetModal.THEME_DARK
     });
 });
-$("#trailer-xmen").click(function () { 
-    $.sweetModal({ 
-        title: "X-men: Fênix Negra", 
+$("#trailer-xmen").click(function () {
+    $.sweetModal({
+        title: "X-men: Fênix Negra",
         content: "<iframe width='100%' height='450' src='https://www.youtube.com/embed/f4S5xrQBwZA?rel=0&amp;showinfo=0' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>",
         theme: $.sweetModal.THEME_DARK
-    }); 
+    });
 });
-$("#trailer-venom").click(function(){
+$("#trailer-venom").click(function () {
     $.sweetModal({
-        title:"Venom" ,
+        title: "Venom",
         content: "<iframe width='100%' height='450' src='https://www.youtube.com/embed/u9Mv98Gr5pY?rel=0&amp;showinfo=0' frameborder='0' allow='autoplay; encrypted-media' allowfullscreen></iframe>",
         theme: $.sweetModal.THEME_DARK
     });
+});
+//verificação
+$("#form").submit(function (event) {
+    if ($("#nome").val() == "") {
+        $("#nomeS").css("color", "red").text("Nome nao informado!").show().fadeOut(5000);
+        var ok = false;
+        event.preventDefault();// "nao envia o formulario"
+    }
+    if ($("#E-mail").val() == "") {
+        $("#emailS").css("color", "red").text("E-mail não informado!").show().fadeOut(5000);
+        var ok = false;
+        event.preventDefault();// "nao envia o formulario"
+    }
+    if($("#text").val() == ""){
+        $("#text").attr("placeholder","Digite sua sugestão ou duvida.");
+        event.preventDafault();// "nao envia o formulario"
+    }
+    return;
 });
