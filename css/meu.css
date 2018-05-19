@@ -1,4 +1,11 @@
 /* Image style */
+.diferente{
+    color: #0055ff;
+}
+a:hover{
+    padding: 2px;
+    border: 1px solid #000000;
+}
 .social-footer {
     padding: 1rem;
     background: #8a8a8a;
