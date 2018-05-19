@@ -1,10 +1,15 @@
 /* Image style */
 .diferente{
-    color: #0055ff;
+    color: #000000;
+    transition: all 0.5s;
 }
-a:hover{
-    padding: 2px;
+.diferente:hover{
+    padding: 3px;
     border: 1px solid #000000;
+    border-radius: 3px;
+    background-color: #0444f3;
+    color: #fff;
+    transition: all 0.5s;
 }
 .social-footer {
     padding: 1rem;
