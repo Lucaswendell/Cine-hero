@@ -1,36 +1,59 @@
-@media screen and (max-width: 768px){
-    .flex{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: space-between;
-    }
+/*minhas alterações*/
+.alinha{
+    display: flex;
+    justify-content: center;
+}
+.linha{
+    display: flex;
+    padding: 3px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: stretch;
+    flex-grow: 1;
+    flex-basis: auto;
+    flex-shrink: 1;
+}
+.coluna{
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: stretch;
+    flex-grow: 1;
+    flex-basis: auto;
+    flex-shrink: 1;
+    
 }
 .diferente{
-    color: #da2d2d;
+    color: #000;
     transition: all 0.5s;
 }
 .diferente:hover{
-    padding: 3px;
-    border: 1px solid #000000;
+    padding: 5px;
     border-radius: 3px;
     background-color: #0444f3;
     color: #fff;
     transition: all 0.5s;
 }
+.corBranca{
+    color: #fff;
+}
 .social-footer {
-    padding: 1rem;
+    text-align: center;
     background: #8a8a8a;
-    display: -webkit-flex;
-    display: -ms-flexbox;
+    color: #fff;
     display: flex;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: initial;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: stretch;
+    flex-grow: 1;
+    flex-basis: auto;
+    flex-shrink: 1;
   }
   
   .social-footer .social-footer-icons li:last-of-type {
@@ -179,8 +202,7 @@ p {
 
 .logo {
     width: 120px;
-    float: left;
-    margin-left: 30px;
+    margin: 10px;
     color: #FAEFDE;
     font-weight: bold;
     -webkit-transition: all 200ms ease-out;

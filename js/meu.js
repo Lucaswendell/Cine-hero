@@ -75,17 +75,21 @@ $("#trailer-venom").click(function () {
 $("#form").submit(function (event) {
     if ($("#nome").val() == "") {
         $("#nomeS").css("color", "red").text("Nome nao informado!").show().fadeOut(5000);
-        var ok = false;
         event.preventDefault();// "nao envia o formulario"
-    }
+    }else
     if ($("#E-mail").val() == "") {
         $("#emailS").css("color", "red").text("E-mail não informado!").show().fadeOut(5000);
-        var ok = false;
         event.preventDefault();// "nao envia o formulario"
-    }
+    }else
     if($("#text").val() == ""){
         $("#text").attr("placeholder","Digite sua sugestão ou duvida.");
-        event.preventDafault();// "nao envia o formulario"
-    }
+        event.preventDefault();// "nao envia o formulario"
+    }else{
+    $.sweetModal({
+        content: "Enviado com sucesso!!",
+        icon: $.sweetModal.ICON_SUCCESS,
+        theme: $.sweetModal.THEME_DARK
+    });
     return;
+    }
 });

@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="css/image.css">
     <link rel="stylesheet" href="css/jquery.sweet-modal.min.css">
     <link rel="stylesheet" href="css/meu.css">
-
 </head>
 
 <body>
@@ -28,22 +27,15 @@
             <div class="top-content-section">
                 <div class="top-bar">
                     <div class="top-bar-left">
-                        <!-- responsivo   -->
-                        <ul class="menu hide-for-medium ">
-                            <!-- botao responsivo -->
+                        <!-- menu  -->
+                        <ul class="menu">
                             <li>
                                 <button class="toggle-button">
-                                    <img src="imagens/menu.png" alt="" width="50px">
-                                </button>
+                                    <img src="imagens/menu.png" alt="" width="45px">
+                                </button> 
                             </li>
-                            <li class=" float-center ">
-                                <p class="h3" style="color: #ffffff;">Cine Hero</p>
-                            </li>
-                        </ul>
-                        <!-- tablet & desktop -->
-                        <ul class="menu show-for-medium">
-                            <li class="menu-text float-center">
-                                <!-- <img src="imagens/cinehero2.png" width="500" alt="logo" width="90px"> -->
+                            <li class=" float-center">
+                                <!-- logo -->
                             </li>
                         </ul>
                     </div>
@@ -53,7 +45,6 @@
             <div class="middle-content-section">
                 <h1 style="text-shadow: #000000 2px 2px;">Fique por dentro das novidades
                     <br> sobre o seu heroi favorito</h1>
-                <!-- <button class="button small">Filmes...</button>-->
             </div>
             <div class="bottom-content-section" data-magellan data-threshold="0">
                 <a href="#main-content-section">
@@ -113,7 +104,6 @@
 
                     <div class="parallax-window" data-parallax="scroll" data-image-src="imagens/guerrainfinita.jpg">
                     </div>
-
                     <h2>Jovens Titãs em Ação</h2>
                     <h4>
                         <br> Robin, Ciborgue, Estelar, Ravena e Mutano são os Jovens Titãs.
@@ -219,64 +209,76 @@
     <!-- rodapé -->
     <footer class="social-footer">
         <div class="social-footer-left">
-            <div class="flex">
             <h4>Criadores</h4>
-            <a href="#">
-                <img class="logo" data-tooltip data-position="top" data-alignment="center" type="button" tabindex="1" title="Keisy Barbosa" width="50px" height="50px" src="imagens/heroisdc.gif" to>
-            </a>
-            <a href="#">
-                <img class="logo" width="50px" height="50px" src="imagens/heroisdc.gif" data-tooltip data-position="top" data-alignment="center" type="button" tabindex="1" title="Lucas Wendel">
-            </a>
-            <a href="#">
-                <img class="logo" width="50px" height="50px" src="imagens/heroisdc.gif" data-tooltip data-position="top" data-alignment="center" type="button" tabindex="1" title="Francisco Túlio">
-            </a>
-            <a href="#">
-                <img class="logo" width="50px" height="50px" src="imagens/heroisdc.gif" data-tooltip data-position="top" data-alignment="center" type="button" tabindex="1" title="Giselle Kelve">
-            </a>
-            <a href="#">
-                <img class="logo" width="50px" height="50px" src="imagens/heroisdc.gif" data-tooltip data-position="top" data-alignment="center" type="button" tabindex="1" title="Jessica Costa">
-            </a>
-            <a href="#">
-                <img class="logo" width="50px" height="50px" src="imagens/heroisdc.gif" data-tooltip data-position="top" data-alignment="center" type="button" tabindex="1" title="Leonardo Felix">
-            </a>
-            <a href="#">
-                <img class="logo" width="50px" height="50px" src="imagens/heroisdc.gif" data-tooltip data-position="top" data-alignment="center" type="button" tabindex="1" title="Yasmim Rocha">
-            </a><br>
-            <h4>Mais informações</h4>
-            <p style="color: #000000;">Que da sugestão ou tirar alguma duvida? Acesse a nossa pagina de
+
+            <div class="linha">
+                <a href="#">
+                    <img class="logo" data-tooltip data-position="top" data-alignment="center"  tabindex="1" title="Keisy Barbosa"
+                        width="50px" height="50px" src="imagens/heroisdc.gif" to>
+                </a>
+                <a href="#">
+                    <img class="logo" width="50px" height="50px" src="imagens/heroisdc.gif" data-tooltip data-position="top" data-alignment="center"
+                         tabindex="1" title="Lucas Wendel">
+                </a>
+                <a href="#">
+                    <img class="logo" width="50px" height="50px" src="imagens/heroisdc.gif" data-tooltip data-position="top" data-alignment="center"
+                         tabindex="1" title="Francisco Túlio">
+                </a>
+                <a href="#">
+                    <img class="logo" width="50px" height="50px" src="imagens/heroisdc.gif" data-tooltip data-position="top" data-alignment="center"
+                         tabindex="1" title="Giselle Kelvin">
+                </a>
+                <a href="#">
+                    <img class="logo" width="50px" height="50px" src="imagens/heroisdc.gif" data-tooltip data-position="top" data-alignment="center"
+                         tabindex="1" title="Jessica Costa">
+                </a>
+                <a href="#">
+                    <img class="logo" width="50px" height="50px" src="imagens/heroisdc.gif" data-tooltip data-position="top" data-alignment="center"
+                         tabindex="1" title="Leonardo Felix">
+                </a>
+                <a href="#">
+                    <img class="logo" width="50px" height="50px" src="imagens/heroisdc.gif" data-tooltip data-position="top" data-alignment="center"
+                         tabindex="1" title="Yasmim Rocha">
+                </a>
+                <br>
+            </div>
+            <div class="coluna">
+                <h4>Mais informações</h4>
+                <p class="corBranca">Que da sugestão ou tirar alguma duvida? Acesse a nossa pagina de
                     <a href="paginas/feedback.html" class="diferente">feedback</a>. Site feito por alunos da EEEP Paulo Petrola.</p>
-        </div><br>
-        <div class="social-footer-icons">
-            <h5>Acesse as nossas redes socias</h5>
-            <ul class="menu simple">
-                <li>
-                    <a href="https://www.facebook.com/">
-                        <img src="imagens/facebook.png" width="25px" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/?hl=en">
-                        <img src="imagens/instagram.png" width="40px">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/?lang=en">
-                        <img src="imagens/tweeter.png" alt="" width="30px">
-                    </a>
-                </li>
-            </ul>
-        </div>
+                <br>
+                <div class="social-footer-icons">
+                    <h5>Redes sociais</h5>
+                    <ul class="menu simple alinha">
+                        <li>
+                            <a href="https://www.facebook.com/">
+                                <img src="imagens/facebook.png" width="25px" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/?hl=en">
+                                <img src="imagens/instagram.png" width="40px" >
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/?lang=en">
+                                <img src="imagens/tweeter.png" alt="" width="30px">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
-
 </body>
-    <!-- javascript   -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.scrollUp.js"></script>
-    <script src="js/parallax.min.js"></script>
-    <script src="js/slideout.min.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/fakeLoader.js"></script>
-    <script src="js/jquery.sweet-modal.min.js"></script>
-    <script src="js/meu.js"></script>
+<!-- javascript   -->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.scrollUp.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/slideout.min.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/fakeLoader.js"></script>
+<script src="js/jquery.sweet-modal.min.js"></script>
+<script src="js/meu.js"></script>
+
 </html>
