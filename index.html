@@ -20,7 +20,26 @@
 <body>
     <div id="fakeloder"></div>
     <nav id="menu">
-        
+        <ul class="menu expanded" data-magellan>
+            <li>
+                <a href="#GuerraInfinita">GuerraInfinita</a>
+            </li>
+            <li>
+                <a href="#JovensTitãsemAção">JovensTitãsemAção</a>
+            </li>
+            <li>
+                <a href="#Deadpool2">Deadpool2</a>
+            </li>
+            <li>
+                    <a href="#Homem-FormigaeaVespa">Homem-FormigaeaVespa</a>
+
+            </li>
+
+            <li>
+                    <a href="#X-men:FênixNegra">X-men:FênixNegra</a>
+            </li>
+        </ul>
+
     </nav>
     <main id="panel">
         <div class="hero-full-screen">
@@ -32,7 +51,7 @@
                             <li>
                                 <button class="toggle-button">
                                     <img src="imagens/menu.png" alt="" width="45px">
-                                </button> 
+                                </button>
                             </li>
                             <li class=" float-center">
                                 <!-- logo -->
@@ -92,12 +111,17 @@
                     <br>
                     <div class="parallax-window" data-parallax="scroll" data-image-src="imagens/cinema.jpg"></div>
                     <!-- filmes -->
+                    <div class="sections">
                     <h2>Guerra infinita</h2>
+                        <section id="GuerraInfinita" data-magellan-target="GuerraInfinita">
+                        
+                    </div>
                     <h4>Homem de Ferro, Thor, Hulk e os Vingadores se unem para combater seu inimigo mais poderoso,
                         <br> o maligno Thanos.
                         <br> Em uma missão para coletar todas as seis pedras infinitas,
                         <br> Thanos planeja usá-las para infligir sua vontade maléfica sobre a realidade.</h4>
                     <br>
+                 </section>
                     <button class="hollow button" href="#" id="trailer"> trailer</button>
 
                     <br>
@@ -105,6 +129,7 @@
                     <div class="parallax-window" data-parallax="scroll" data-image-src="imagens/guerrainfinita.jpg">
                     </div>
                     <h2>Jovens Titãs em Ação</h2>
+                        <section id="JovensTitãsemAção" data-magellan-target="JovensTitãsemAção">
                     <h4>
                         <br> Robin, Ciborgue, Estelar, Ravena e Mutano são os Jovens Titãs.
                         <br>Ao perceberem que todos os super-heróis estão estrelando filmes, eles decidem se mobilizar para também
@@ -115,6 +140,7 @@
                     <button class="hollow button" href="#" id="trailer-jovem"> trailer</button>
 
                     <br>
+                </section>
 
                     <div class="parallax-window" data-parallax="scroll" data-image-src="imagens/jovens.jpg">
                     </div>
@@ -124,11 +150,14 @@
 
 
                     <h2>Deadpool 2</h2>
+                    <section id="Deadpool2" data-magellan-target="Deadpool2">
                     <h4>
                         <br>Deadpool (Ryan Reynolds) está de volta maior, melhor e mais engraçado do que nunca.
                         <br> Quando o super soldado Cable (Josh Brolin) chega em uma missão assassina, o mercenário precisa aprender
                         o que é ser herói de verdade, recrutando pessoas poderosas, ou não, para ajudá-lo.</h4>
                     <br>
+                    </section>
+
                     <button class="hollow button" href="#" id="trailer-deadpool"> trailer</button>
                     <br>
                     <div class="parallax-window" data-parallax="scroll" data-image-src="imagens/vermelho.jpg">
@@ -140,6 +169,7 @@
                     </div>
 
                     <h2>Homem-Formiga e a Vespa</h2>
+                    <section id="Homem-FormigaeaVespa" data-magellan-target="Homem-FormigaeaVespa">
                     <h4>
                         <br>Depois dos acontecimentos de Capitão América: Guerra Civil, Scott Lang (Paul Rudd) tem que lidar
                         com as consequências dos seus atos como Homem Formiga para o público e como pai.
@@ -150,8 +180,9 @@
                     <br>
                     <div class="parallax-window" data-parallax="scroll" data-image-src="imagens/homem.jpg">
                     </div>
-
+</section>
                     <h2>X-men: Fênix Negra</h2>
+                    <section id="X-men:FênixNegra" data-magellan-target="X-men:FênixNegra">
                     <h4>
                         <br>Em A Fênix Negra, Jean Grey (Sophie Turner) descobrirá a real extensão de seus poderes da pior forma
                         possível, quando um espírito cósmico possui seu corpo e a transforma em uma verdadeira máquina de
@@ -162,6 +193,7 @@
                         segundo Tye Sheridan, o Ciclope do Universo X-Men,
                         <br> A Fênix Negra é um drama antes de ser um filme de super-heróis.</h4>
                     <br>
+                    </section>
                     <button class="hollow button" href="#" id="trailer-xmen"> trailer</button>
                     <br>
                     <div class="parallax-window" data-parallax="scroll" data-image-src="imagens/xman.jpg">
@@ -213,37 +245,36 @@
 
             <div class="linha">
                 <a href="#">
-                    <img class="logo" data-tooltip data-position="top" data-alignment="center"  tabindex="1" title="Keisy Barbosa"
-                        width="50px" height="50px" src="imagens/keisy.jpg" to>
+                    <img class="logo" data-tooltip data-position="top" data-alignment="center" tabindex="1" title="Keisy Barbosa" width="50px"
+                        height="50px" src="imagens/keisy.jpg" to>
                 </a>
                 <a href="#">
                     <img class="logo" width="50px" height="50px" src="imagens/Lucas.jpg" data-tooltip data-position="top" data-alignment="center"
-                         tabindex="1" title="Lucas Wendel">
+                        tabindex="1" title="Lucas Wendel">
                 </a>
                 <a href="#">
                     <img class="logo" width="50px" height="50px" src="imagens/tulio.jpg" data-tooltip data-position="top" data-alignment="center"
-                         tabindex="1" title="Francisco Túlio">
+                        tabindex="1" title="Francisco Túlio">
                 </a>
                 <a href="#">
                     <img class="logo" width="50px" height="50px" src="imagens/giselle.jpg" data-tooltip data-position="top" data-alignment="center"
-                         tabindex="1" title="Giselle Kelvin">
+                        tabindex="1" title="Giselle Kelvin">
                 </a>
                 <a href="#">
                     <img class="logo" width="50px" height="50px" src="imagens/jessica.jpg" data-tooltip data-position="top" data-alignment="center"
-                         tabindex="1" title="Jessica Costa">
+                        tabindex="1" title="Jessica Costa">
                 </a>
                 <a href="#">
-                    <img class="logo" src="imagens/leo.jpg" data-tooltip data-position="top" data-alignment="center"
-                         tabindex="1" title="Leonardo Felix">
+                    <img class="logo" src="imagens/leo.jpg" data-tooltip data-position="top" data-alignment="center" tabindex="1" title="Leonardo Felix">
                 </a>
                 <a href="#">
                     <img class="logo" width="50px" height="50px" src="imagens/yasmim.jpg" data-tooltip data-position="top" data-alignment="center"
-                         tabindex="1" title="Yasmim Rocha">
+                        tabindex="1" title="Yasmim Rocha">
                 </a>
             </div>
             <div class="coluna">
                 <h4>Mais informações</h4>
-                <p class="corBranca">Quer tirar alguma duvida ou da sugestão  ? Acesse a nossa pagina de
+                <p class="corBranca">Quer tirar alguma duvida ou da sugestão ? Acesse a nossa pagina de
                     <a href="paginas/feedback.html" class="diferente">feedback</a>. Site feito por alunos da EEEP Paulo Petrola.</p>
                 <br>
                 <div class="social-footer-icons">
@@ -256,7 +287,7 @@
                         </li>
                         <li>
                             <a href="https://www.instagram.com/?hl=en">
-                                <img src="imagens/instagram.png" width="40px" >
+                                <img src="imagens/instagram.png" width="40px">
                             </a>
                         </li>
                         <li>
