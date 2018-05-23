@@ -93,3 +93,10 @@ $("#form").submit(function (event) {
     return;
     }
 });
+//photobox
+
+$('#photobox').photobox('a',{
+    time:1000,
+    autoplay:true,
+    captionTmpl:'DESENVOLVEDORES DO SITE'
+})
