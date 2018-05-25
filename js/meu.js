@@ -71,6 +71,7 @@ $("#trailer-venom").click(function () {
         theme: $.sweetModal.THEME_DARK
     });
 });
+
 $("#trailer-homemAranha").click(function () {
     $.sweetModal({
         title: "Homem-Aranha no Aranhaverso",
