@@ -1,3 +1,32 @@
+//slideOut
+var slideout = new Slideout({
+    'panel': document.getElementById("panel"),
+    'menu': document.getElementById("menu"),
+    'padding': 256,
+    'tolerance': 70
+});
+$(".toggle-button").click(function(){
+    slideout.toggle();
+});
+$(".linksMenu").click(function(){
+    slideout.close();
+});
+slideout.on("open",function(){
+    $("#fora").fadeOut("slow",function(){
+        $("#fora").css("display","none");
+    });
+    $("#dentro").fadeIn("slow",function(){
+        $("#dentro").css("display","block");
+    });
+});
+slideout.on("close",function(){
+   $("#fora").fadeIn("slow",function(){
+        $("#fora").css("display","block");
+    });
+    $("#dentro").fadeOut("slow",function(){
+        $("#dentro").css("display","none");
+    }); 
+});
 // foundation
 $(document).foundation();
 //scroll UP
@@ -19,15 +48,6 @@ $("#fakeloder").fakeLoader({
 });
 //paralax
 $('.parallax-window').parallax();
-var slideout = new Slideout({
-    'panel': document.getElementById("panel"),
-    'menu': document.getElementById("menu"),
-    'padding': 256,
-    'tolerance': 70
-});
-$('.toggle-button').on('click', function () {
-    slideout.toggle();
-});
 //trailer
 $("#trailer").click(function () {
     $.sweetModal({
@@ -109,7 +129,6 @@ $("#form").submit(function (event) {
     }
 });
 //photobox
-
 $('#photobox').photobox('a',{
     time:1000,
     autoplay:true,
