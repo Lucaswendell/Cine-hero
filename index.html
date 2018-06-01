@@ -9,29 +9,22 @@
     <!-- favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="imagens/favicon.ico">
     <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/fakeLoader.css">
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/jquery.sweet-modal.min.css">
     <link rel="stylesheet" href="css/photobox.css">
     <link rel="stylesheet" href="css/meu.css">
-    <style type="text/css">
-        div.fixa{
-            position: fixed;
-            margin-left: 10px;
-            margin-top: 1rem;
-            z-index: 100; 
-        }
-    </style>
-
 </head>
-
 <body>
     <div id="fakeloder"></div>
     <nav id="menu">
-        <div></div>
+        <div class="">
+        	<div class="amaçado"></div>
+        </div>
         <button class="toggle-button float-center" id="dentro" style="margin-top: 1rem; display: none;">
             <img src="imagens/menu.png" alt="" width="50px">
         </button>
-        <ul class="menu expanded" data-magellan style="display: block; margin-left: 10px; ">
+        <ul class="menu " data-magellan style="display: block; margin-left: 10px; ">
             <li>
                 <a href="#GuerraInfinita" class="linksMenu">Guerra Infinita</a>
             </li>
@@ -49,25 +42,28 @@
             <li>
                 <a href="#X-menFênixNegra" class="linksMenu">X-men: Fênix Negra</a>
             </li>
+            <li>
+            	<a href="paginas/feedback.html">Feedback</a>
+            </li>
         </ul>
     </nav>
-    <div class="fixa">
-        <button class="toggle-button" id="fora">
-            <img src="imagens/menu.png" alt="" width="50px">
-        </button>
-    </div>
+     <div class="menuBotao"> 
+            <input type="checkbox" id="check" class="toggle-button">
+            <label for="check"></label>
+            <span></span> 
+        </div>
     <main id="panel">
         <div class="hero-full-screen">
 
             <div class="middle-content-section">
-                <h1 style="text-shadow: #000000 2px 2px; margin-top: 50%;">Fique por dentro das novidades
-                    <br> sobre o seu heroi favorito</h1>
+                <h1 class="classeDoH1">Fique por dentro das novidades
+                    <br>sobre o seu heroi favorito</h1>
             </div>
             <div class="bottom-content-section" data-magellan data-threshold="0">
                 <a href="#main-content-section">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                         <path d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z"
-                        />
+                       	/>
                     </svg>
                 </a>
             </div>
@@ -75,7 +71,6 @@
         <div id="main-content-section" data-magellan-target="main-content-section">
             <!-- inicio da pagina -->
             <center>
-
                 <div id="main-content-section" data-magellan-target="main-content-section">
                     <h2>Lançamentos Marvel/Dc 2018</h2>
                     <h6>15 de fevereiro:
@@ -108,7 +103,7 @@
 
                     <br>
                     <div class="parallax-window" data-parallax="scroll" data-image-src="imagens/cinema.jpg"></div>
-                    <!-- filmes -->
+                    <!--filmes -->
                     <div class="sections">
                         <section id="GuerraInfinita" data-magellan-target="GuerraInfinita">
                             <h2>Guerra infinita</h2>
@@ -155,11 +150,6 @@
 
                         <div class="parallax-window" data-parallax="scroll" data-image-src="imagens/vermelho.png">
 
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <br>
                         </div>
                     </section>
                     <section id="Homem-FormigaeaVespa" data-magellan-target="Homem-FormigaeaVespa">
@@ -223,7 +213,7 @@
                             começem a se preparar para invadir a superfície”.</h4>
                         <br>
 
-                        <button class="hollow button" href="#" id="trailer-aquaman"> trailer</button>
+                        <button class="hollow button" href="#" id="trailer-aquaman">trailer</button>
 
                         <br>
                         <div class="parallax-window" data-parallax="scroll" data-image-src="imagens/aqua2.jpg">
@@ -232,8 +222,7 @@
                 </div>
             </center>
         </div>
-    </main>
-    <!-- rodapé -->
+        <!-- rodapé -->
     <footer class="social-footer">
         <div class="social-footer-left">
             <h4>Desenvolvedores</h4>
@@ -297,12 +286,14 @@
             </div>
         </div>
     </footer>
+    </main>
+    
 </body>
 <!-- javascript   -->
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.photobox.js"></script>
 <script src="js/jquery.scrollUp.js"></script>
-<script src="js/parallax.min.js"></script>
+<script src="js/parallax.js"></script>
 <script src="js/slideout.min.js"></script>
 <script src="js/vendor/foundation.js"></script>
 <script src="js/fakeLoader.js"></script>

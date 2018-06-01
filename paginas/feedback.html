@@ -9,9 +9,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="../imagens/favicon.ico">
     <!-- css -->
     <link rel="stylesheet" href="../css/foundation.css">
-    <link rel="stylesheet" href="../css/slideout.css">
     <link rel="stylesheet" href="../css/fakeLoader.css">
-    <link rel="stylesheet" href="../css/image.css">
     <link rel="stylesheet" href="../css/jquery.sweet-modal.min.css">
     <link rel="stylesheet" href="../css/meu.css">
     <link rel="stylesheet" type="text/css" href="../css/photobox.css">
@@ -21,29 +19,21 @@
     <div id="fakeloder"></div>
     <!-- menu -->
     <nav id="menu">
-
+        <ul class="menu" style="display: block; margin-left: 10px; ">
+            <li>
+                <a href="../index.html">Pagina incial</a>
+            </li>
+        </ul>
     </nav>
+    <div class="menuBotao"> 
+            <input type="checkbox" id="check" class="toggle-button">
+            <label for="check"></label>
+            <span></span> 
+        </div>
     <main id="panel">
-        <div class="hero-full-screen">
-            <div class="top-content-section">
-                <div class="top-bar">
-                    <div class="top-bar-left">
-                        <ul class="menu ">
-
-                            <li>
-                                <button class="toggle-button">
-                                    <img src="../imagens/menu.png" alt="" width="45px">
-                                </button>
-                            </li>
-                            <li class=" float-center ">
-                                <!-- logo -->
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            <div class="hero-full-screen">
             <div class="middle-content-section">
-                <h1 style="text-shadow: #000000 2px 2px;">Fique por dentro das novidades
+                <h1 class="classeDoH1">Fique por dentro das novidades
                     <br> sobre o seu heroi favorito</h1>
             </div>
             <div class="bottom-content-section" data-magellan data-threshold="0">
@@ -58,13 +48,13 @@
         <br>
         <!-- formulario de FeedBack -->
         <div id="main-content-section" data-magellan-target="main-content-section">
-            <form action="feedback.html" method="POST" id="form">
+            <form action="feedback.html" method="POST" id="form" data-abide novalidate>
                 <div class="container">
                     <legend>FeedBack</legend>
                     <label for="nome">Nome:
                         <b style="color:red">*</b>
-                        <input type="text" placeholder="ex: Peter" id="nome">
-                        <span id="nomeS"></span>
+                        <input type="text" placeholder="ex: Peter" id="nome" required>
+                        <span class="form-error" id="nomeS"></span>
                     </label>
 
                     <label for="sobrenome">Sobrenome:
@@ -73,14 +63,14 @@
 
                     <label for="E-mail">E-mail:
                         <b style="color:red">*</b>
-                        <input type="email" placeholder="ex: homemaranha@gmail.com" id="E-mail">
-                        <span id="emailS"></span>
+                        <input type="email" placeholder="ex: homemaranha@gmail.com" id="E-mail" required>
+                        <span id="emailS" class="form-error"></span>
                     </label>
                     <label for="text">Envie sua duvida ou sugestão de como melhorar o CINE HERO.
                         <b style="color:red">*</b>
                         <textarea name="" id="text" cols="30" rows="10" placeholder=""></textarea>
                     </label>
-                    <input type="submit" value="enviar" class="button">
+                    <input type="submit" value="enviar" class="button" >
                 </div>
             </form>
         </div>
@@ -88,7 +78,6 @@
         <footer class="social-footer">
             <div class="social-footer-left">
                 <h4>Desenvolvedores</h4>
-
                 <div class="linha" id="photobox">
                     <a href="../imagens/keisy.jpg">
                         <img class="logo" width="50px" height="50px" src="../imagens/keisy.jpg" data-tooltip data-position="top" data-alignment="center"
@@ -146,7 +135,6 @@
                 </div>
             </div>
         </footer>
-
     </main>
 
 </body>
@@ -154,7 +142,6 @@
 <script src="../js/jquery.min.js"></script>
 <script src="../js/jquery.photobox.js"></script>
 <script src="../js/jquery.scrollUp.js"></script>
-<script src="../js/parallax.min.js"></script>
 <script src="../js/slideout.min.js"></script>
 <script src="../js/vendor/foundation.js"></script>
 <script src="../js/fakeLoader.js"></script>
