@@ -1,9 +1,3 @@
-@media screen and (max-width: 768px){
-    .menuBotao{
-        width: 50px;
-        height: 50px;
-    }
-}
 body {
     width: 100%;
     height: 100%;
@@ -20,26 +14,23 @@ body {
     margin-top: 10px;
     transition: all .2s;
     position: fixed;
+    cursor: pointer;
     z-index: 1;
 }
-.menuBotao label{
+.menuBotao div.label{
     width: 100%;
     height: 100%;
     background-color: #111;
+    margin-left: 7%;    
     position: absolute;
     z-index: 1;
+    cursor: pointer;
     transition: all 0.1s linear;
 }
-#check{
-    position: absolute;
-    z-index: 1;
-    display: none;
-}
-span:before{
-    content: '';
+span.spanDepois {
     width: 60px;
     height: 8px;
-    bottom: -20px;
+    margin-top: 20px;
     position: absolute;
     background-color: #fff;
     transition: all 0.3s linear;
@@ -54,29 +45,14 @@ span{
     background-color: #fff;
     transition: all 0.3s linear;
 }
-span:after{
-    content: '';
+span.spanAntes{
     width: 60px;
     height: 8px;
-    top: -20px;
+    top: 20%;
     position: absolute;
     background-color: #fff;
-    transition: all 0.3s linear;
+    transition: all 0.3s linear; 
 }
-#check:checked ~ span{
-    background-color: transparent;
-}
-#check:checked ~ label{
-    border-radius: 50%;
-}
-
-#check:checked ~ span:before {
-    transform: translate(0px, -20px) rotate(-45deg);
-}
-#check:checked ~ span:after {
-    transform: translate(0px, 20px) rotate(45deg);
-}
-
 .classeDoH1{
     text-shadow: #000000 2px 2px; 
     margin-top: 50%;
