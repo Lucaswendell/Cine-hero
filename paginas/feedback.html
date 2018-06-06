@@ -17,6 +17,12 @@
 
 <body>
     <div id="fakeloder"></div>
+    <!--botao-->
+       <label for="input-hamburg" id="click" class="click-me"> 
+        <div class="menu-hamburg">
+            <span class="linha-hamburg"></span> 
+        </div>
+    </label
     <!-- menu -->
     <nav id="menu">
         <ul class="menu" style="display: block; margin-left: 10px; ">
@@ -25,11 +31,6 @@
             </li>
         </ul>
     </nav>
-    <div class="menuBotao"> 
-            <input type="checkbox" id="check" class="toggle-button">
-            <label for="check"></label>
-            <span></span> 
-        </div>
     <main id="panel">
             <div class="hero-full-screen">
             <div class="middle-content-section">
@@ -58,13 +59,13 @@
                     </label>
 
                     <label for="sobrenome">Sobrenome:
-                        <input type="text" placeholder="ex: Parker" id="sobrenome">
+                        <input type="text" placeholder="ex: Parker" id="sobrenome" >
                     </label>
 
                     <label for="E-mail">E-mail:
                         <b style="color:red">*</b>
-                        <input type="email" placeholder="ex: homemaranha@gmail.com" id="E-mail" required>
-                        <span id="emailS" class="form-error"></span>
+                        <input type="email" placeholder="ex: homemaranha@gmail.com" id="E-mail" onblur="ajax('emeilS',value)">
+                        <span id="emailS"></span>
                     </label>
                     <label for="text">Envie sua duvida ou sugestão de como melhorar o CINE HERO.
                         <b style="color:red">*</b>

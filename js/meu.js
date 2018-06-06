@@ -1,11 +1,11 @@
+// foundation
+$(document).foundation();
 //fakeloader
 $("#fakeloder").fakeLoader({
-    timeToHide: 2000,
+    timeToHide: 1000,
     spinner: "spinner2",
     bgColor: "#000",
 });    
-// foundation
-$(document).foundation();
 //slideOut
 var slideout = new Slideout({
     'panel': document.getElementById("panel"),
@@ -13,31 +13,27 @@ var slideout = new Slideout({
     'padding': 256,
     'tolerance': 70
 });
-$("#clicando").click(function(){
-        if($(this).prop("class") == "toggle-button clicado"){
-            $(this).removeClass("clicado").addClass("edai");
-            $(".span").css("background","transparent");
-            $(".spanAntes").css("tranform","translate(0,20px) rotate(45deg)");
-        }else{
-            $(".span").css("background","#fff");
-            $(".spanAntes").css("tranform","translate(0,20px) rotate(45deg)");
-            $(this).removeClass("edai").addClass("clicado");
-        }
-        $("span:before").css("transform","translate(0,20px) rotate(45deg)");
-});
 $(".toggle-button").click(function(){
     slideout.toggle();
 });
 $(".linksMenu").click(function(){
     slideout.close();
-    
+    slideout.on("close",function(){
+    if($("#click").prop("class") == "clicado"){
+        $("#click").removeClass("clicado").addClass("click-me");
+    }     
+    }); 
 });
-slideout.on("open",function(){
-    $(".menuBotao").css("margin-left","250px");
+//efeito botao
+$("#click").click(function (){
+    slideout.toggle();  
+    if($(this).prop("class") == "click-me"){
+        $(this).removeClass("click-me").addClass("clicado");
+    }else{
+        $(this).removeClass("clicado").addClass("click-me");
+    }
 });
-slideout.on("close",function(){
-      $(".menuBotao").css("margin-left","0"); 
-});
+
 //scroll UP
 $.scrollUp({
     scrollDistance: 700,
@@ -113,25 +109,3 @@ $('#photobox').photobox('a',{
     autoplay:true,
     captionTmpl:'DESENVOLVEDORES DO SITE'
 });
-//verificação
-$("#form").submit(function (event) {
-    if ($("#nome").val() == "") {
-        $("#nomeS").css("color", "red").text("Nome não informado!").show().fadeOut(5000);
-        event.preventDefault();// "nao envia o formulario"
-    }else
-    if ($("#E-mail").val() == "") {
-        $("#emailS").css("color", "red").text("E-mail não informado!").show().fadeOut(5000);
-        event.preventDefault();// "nao envia o formulario"
-    }else
-    if($("#text").val() == ""){
-        $("#text").attr("placeholder","Digite sua sugestão ou duvida.");
-        event.preventDefault();// "nao envia o formulario"
-    }else{
-        $.sweetModal({
-            content: "Enviado com sucesso!!",
-            icon: $.sweetModal.ICON_SUCCESS,
-            theme: $.sweetModal.THEME_DARK
-        });
-        event.preventDefault();// "nao envia o formulario"
-    }
-}); 
