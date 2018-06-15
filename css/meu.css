@@ -77,6 +77,23 @@ body {
 	bottom: 0;
 }
 /*minhas alterações*/
+.carregando-barra{
+	display: none;
+	position: fixed;
+	z-index: 100;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url('../imagens/preloader.gif');
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+body.carregando{
+}
+body.carregando .carregando-barra{
+	display: block;
+}
 .classeDoH1{
 	position: relative;	
 	text-shadow: #000000 2px 2px; 
@@ -224,6 +241,7 @@ body {
 
 .slideout-open .slideout-menu {
   display: block;
+  
 }
 /* ----------------------------------------
 Labs page main styles
@@ -448,10 +466,11 @@ Lab specific: scrollUp
 	width: 3.75rem;
 	fill: #fefefe;
 }
+
 @media (max-width: 639px){
 	.classeDoH1{
-		top: 250;
-		font-size: 50px;
+		margin-top: -200px;
+		font-size: 45px;
 		transition: all .5s;
 	}
 }

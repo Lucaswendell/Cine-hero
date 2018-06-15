@@ -17,6 +17,7 @@
 </head>
 <body>
     <div id="fakeloder"></div>
+    <div class="carregando-barra"></div>
      <!--botao-->
        <label for="input-hamburg" id="click" class="click-me"> 
     	<div class="menu-hamburg">
@@ -26,24 +27,28 @@
     <nav id="menu">
         <ul class="menu" data-magellan style="display: block; margin-left: 10px; ">
             <li>
-                <a href="#GuerraInfinita" class="linksMenu">Guerra Infinita</a>
+                <a href="#GuerraInfinita" class="links-menu">Guerra Infinita</a>
             </li>
             <li>
-                <a href="#JovensTitãsemAção" class="linksMenu">Jovens Titãs em Ação</a>
+                <a href="#JovensTitãsemAção" class="links-menu">Jovens Titãs em Ação</a>
             </li>
             <li>
-                <a href="#Deadpool2" class="linksMenu">Deadpool 2</a>
+                <a href="#Deadpool2" class="links-menu">Deadpool 2</a>
             </li>
             <li>
-                <a href="#Homem-FormigaeaVespa" class="linksMenu">Homem-Formiga e a Vespa</a>
-
-            </li>
-
-            <li>
-                <a href="#X-menFênixNegra" class="linksMenu">X-men: Fênix Negra</a>
+                <a href="#Homem-FormigaeaVespa" class="links-menu">Homem-Formiga e a Vespa</a>
             </li>
             <li>
-            	<a href="paginas/feedback.html">Feedback</a>
+            <a href="#Homem-Aranha" class="links-menu">Homem-Aranha no Aranhaverso</a>
+            </li>
+            <li>
+                <a href="#X-menFênixNegra" class="links-menu">X-men: Fênix Negra</a>
+            </li>
+            <li>
+                <a href="#Venom" class="links-menu">Venom</a>
+            </li>
+            <li>
+                <a href="#Aquaman" class="links-menu">Aquaman</a>
             </li>
         </ul>
     </nav>
@@ -176,6 +181,7 @@
                         <div class="parallax-window" data-parallax="scroll" data-image-src="imagens/xman.jpg">
                         </div>
                     </section>
+                    <section id="Venom" data-magellan-target="Venom">
                         <h2>Venom</h2>
                         <h4>
                             <br>Eddie Brock (Tom Hardy) é um jornalista que investiga o misterioso trabalho de um cientista,
@@ -187,7 +193,8 @@
                         <br>
                         <div class="parallax-window" data-parallax="scroll" data-image-src="imagens/ve.jpg">
                         </div>
-
+                    </section>
+                    <section id="Homem-Aranha" data-magellan-target="Homem-Aranha" >
                         <h2>Homem-Aranha no Aranhaverso</h2>
                         <h4>
 
@@ -199,7 +206,8 @@
                         <br>
                         <div class="parallax-window" data-parallax="scroll" data-image-src="imagens/homi.jpg">
                         </div>
-
+                    </section>
+                    <section id="Aquaman" data-magellan-target="Aquaman">
                         <h2>Aquaman</h2>
                         <h4>
                             <br>Segundo a sinopse, “Aquaman mostrará o herói como um líder relutante em Atlântida. Nesse tempo,
@@ -212,6 +220,7 @@
                         <br>
                         <div class="parallax-window" data-parallax="scroll" data-image-src="imagens/aqua2.jpg">
                         </div>
+                    </section>
                     </div>
                 </div>
             </center>
@@ -255,7 +264,7 @@
 
                 <p class="corBranca">Quer tirar alguma duvida ou da sugestão? Acesse a nossa pagina de
 
-                    <a href="paginas/feedback.html" class="diferente">feedback</a>. Site feito por alunos da EEEP Paulo Petrola.</p>
+                    <a id="feedback" href="paginas/feedback.html" class="diferente">feedback</a>. Site feito por alunos da EEEP Paulo Petrola.</p>
                 <br>
                 <div class="social-footer-icons">
                     <h5>Redes sociais</h5>
@@ -280,9 +289,7 @@
             </div>
         </div>
     </footer>
-    </main>
-    
-</body>
+    </main>   
 <!-- javascript   -->
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.photobox.js"></script>
@@ -292,6 +299,7 @@
 <script src="js/vendor/foundation.js"></script>
 <script src="js/fakeLoader.js"></script>
 <script src="js/jquery.sweet-modal.min.js"></script>
-<script src="js/meu.js"></script>
-
+<script src="js/ajax.js"></script>
+<script src="js/app.js"></script>
+</body>
 </html>

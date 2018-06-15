@@ -1,152 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cine Hero | FeedBack</title>
-    <link rel="shortcut icon" type="image/x-icon" href="../imagens/favicon.ico">
-    <!-- css -->
-    <link rel="stylesheet" href="../css/foundation.css">
-    <link rel="stylesheet" href="../css/fakeLoader.css">
-    <link rel="stylesheet" href="../css/jquery.sweet-modal.min.css">
-    <link rel="stylesheet" href="../css/meu.css">
-    <link rel="stylesheet" type="text/css" href="../css/photobox.css">
-</head>
-
+<html>
 <body>
-    <div id="fakeloder"></div>
-    <!--botao-->
-       <label for="input-hamburg" id="click" class="click-me"> 
-        <div class="menu-hamburg">
-            <span class="linha-hamburg"></span> 
-        </div>
-    </label
-    <!-- menu -->
-    <nav id="menu">
-        <ul class="menu" style="display: block; margin-left: 10px; ">
-            <li>
-                <a href="../index.html">Pagina incial</a>
-            </li>
-        </ul>
-    </nav>
-    <main id="panel">
-            <div class="hero-full-screen">
-            <div class="middle-content-section">
-                <h1 class="classeDoH1">Fique por dentro das novidades
-                    <br> sobre o seu heroi favorito</h1>
-            </div>
-            <div class="bottom-content-section" data-magellan data-threshold="0">
-                <a href="#main-content-section">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z"
-                        />
-                    </svg>
-                </a>
-            </div>
-        </div>
-        <br>
         <!-- formulario de FeedBack -->
-        <div id="main-content-section" data-magellan-target="main-content-section">
-            <form action="feedback.html" method="POST" id="form" data-abide novalidate>
+            <form action="feedback.html" method="POST" id="form">
                 <div class="container">
-                    <legend>FeedBack</legend>
                     <label for="nome">Nome:
                         <b style="color:red">*</b>
-                        <input type="text" placeholder="ex: Peter" id="nome" required>
-                        <span class="form-error" id="nomeS"></span>
+                        <input type="text" placeholder="ex: Peter" id="nome"/>
+                        <span id="nomeS" style="color: red;" ></span>
                     </label>
-
                     <label for="sobrenome">Sobrenome:
-                        <input type="text" placeholder="ex: Parker" id="sobrenome" >
+                        <input type="text" placeholder="ex: Parker" id="sobrenome" />
                     </label>
 
                     <label for="E-mail">E-mail:
                         <b style="color:red">*</b>
-                        <input type="email" placeholder="ex: homemaranha@gmail.com" id="E-mail" onblur="ajax('emeilS',value)">
-                        <span id="emailS"></span>
+                        <input type="email" placeholder="ex: homemaranha@gmail.com" id="E-mail" />
+                        <span id="emailS" style="color: red;"></span>
                     </label>
                     <label for="text">Envie sua duvida ou sugestão de como melhorar o CINE HERO.
                         <b style="color:red">*</b>
-                        <textarea name="" id="text" cols="30" rows="10" placeholder=""></textarea>
+                        <textarea name="" id="text" cols="30" rows="10" placeholder="Digite aqui sua sugestão ou duvida."></textarea>
                     </label>
-                    <input type="submit" value="enviar" class="button" >
+                    <input type="submit" value="enviar" class="button">
                 </div>
             </form>
-        </div>
-        <!-- rodapé -->
-        <footer class="social-footer">
-            <div class="social-footer-left">
-                <h4>Desenvolvedores</h4>
-                <div class="linha" id="photobox">
-                    <a href="../imagens/keisy.jpg">
-                        <img class="logo" width="50px" height="50px" src="../imagens/keisy.jpg" data-tooltip data-position="top" data-alignment="center"
-                            tabindex="1" title="Keisy Barbosa">
-                    </a>
-                    <a href="../imagens/Lucas.jpg">
-                        <img class="logo" width="50px" height="50px" src="../imagens/Lucas.jpg" data-tooltip data-position="top" data-alignment="center"
-                            tabindex="1" title="Lucas Wendel">
-                    </a>
-                    <a href="../imagens/tulio.jpg">
-                        <img class="logo" width="50px" height="50px" src="../imagens/tulio.jpg" data-tooltip data-position="top" data-alignment="center"
-                            tabindex="1" title="Francisco Túlio">
-                    </a>
-                    <a href="../imagens/Gissele.jpg">
-                        <img class="logo" width="50px" height="50px" src="../imagens/Gissele.jpg" data-tooltip data-position="top" data-alignment="center"
-                            tabindex="1" title="Giselle Kelvin">
-                    </a>
-                    <a href="../imagens/jessica.jpg">
-                        <img class="logo" width="50px" height="50px" src="../imagens/jessica.jpg" data-tooltip data-position="top" data-alignment="center"
-                            tabindex="1" title="Jessica Costa">
-                    </a>
-                    <a href="../imagens/leo.jpg">
-                        <img class="logo" width="50px" height="50px" src="../imagens/leo.jpg" data-tooltip data-position="top" data-alignment="center"
-                            tabindex="1" title="Leonardo Felix">
-                    </a>
-                    <a href="../imagens/yasmim.JPG">
-                        <img class="logo" width="50px" height="50px" src="../imagens/yasmim.JPG" data-tooltip data-position="top" data-alignment="center"
-                            tabindex="1" title="Yasmim Rocha">
-                    </a>
-                  </div> 
-                <div class="coluna">
-                    <h4>Mais informações</h4>
-                    <p class="corBranca"><a class="diferente" href="../index.html">Página inicial</a>. Site feito por alunos da EEEP Paulo Petrola.</p>
-                    <br>
-                    <div class="social-footer-icons">
-                        <h5>Redes sociais</h5>
-                        <ul class="menu simple alinha">
-                            <li>
-                                <a href="https://www.facebook.com/">
-                                    <img src="../imagens/facebook.png" width="25px" alt="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/?hl=en">
-                                    <img src="../imagens/instagram.png" width="40px">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/?lang=en">
-                                    <img src="../imagens/tweeter.png" alt="" width="30px">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </main>
-
-</body>
 <!-- javascript -->
-<script src="../js/jquery.min.js"></script>
-<script src="../js/jquery.photobox.js"></script>
-<script src="../js/jquery.scrollUp.js"></script>
-<script src="../js/slideout.min.js"></script>
-<script src="../js/vendor/foundation.js"></script>
-<script src="../js/fakeLoader.js"></script>
-<script src="../js/jquery.sweet-modal.min.js"></script>
-<script src="../js/meu.js"></script>
-
+<script type="text/javascript" src="js/validacao.js"></script> 
+</body>
 </html>
