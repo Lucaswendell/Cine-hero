@@ -2,7 +2,7 @@
 $("#fakeloder").fakeLoader({
     timeToHide: 1000,
     spinner: "spinner2",
-    bgColor: "#000",
+    bgColor: "#111"
 });
 $(document).ready(function(){
 	$(document).foundation()

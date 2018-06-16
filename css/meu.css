@@ -87,9 +87,11 @@ body {
 	height: 100%;
 	background-image: url('../imagens/preloader.gif');
 	background-position: 50% 50%;
+	background-color: rgba(1,1,1,0.8);
 	background-repeat: no-repeat;
 }
 body.carregando{
+	overflow: hidden;	
 }
 body.carregando .carregando-barra{
 	display: block;
