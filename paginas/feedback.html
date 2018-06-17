@@ -1,31 +1,26 @@
-<!DOCTYPE html>
-<html>
-<body>
-        <!-- formulario de FeedBack -->
-            <form action="feedback.html" method="POST" id="form">
-                <div class="container">
-                    <label for="nome">Nome:
-                        <b style="color:red">*</b>
-                        <input type="text" placeholder="ex: Peter" id="nome"/>
-                        <span id="nomeS" style="color: red;" ></span>
-                    </label>
-                    <label for="sobrenome">Sobrenome:
-                        <input type="text" placeholder="ex: Parker" id="sobrenome" />
-                    </label>
+<!-- formulario de FeedBack -->
+<form action="#" method="POST" id="form">
+    <div class="container">
+        <label for="nome">Nome:
+            <b style="color:red">*</b>
+            <input type="text" placeholder="ex: Peter" id="nome" required/>
+            <span id="nomeS" style="color: red;" ></span>
+        </label>
+        <label for="sobrenome">Sobrenome:
+            <input type="text" placeholder="ex: Parker" id="sobrenome" />
+        </label>
 
-                    <label for="E-mail">E-mail:
-                        <b style="color:red">*</b>
-                        <input type="email" placeholder="ex: homemaranha@gmail.com" id="E-mail" />
-                        <span id="emailS" style="color: red;"></span>
-                    </label>
-                    <label for="text">Envie sua duvida ou sugestão de como melhorar o CINE HERO.
-                        <b style="color:red">*</b>
-                        <textarea name="" id="text" cols="30" rows="10" placeholder="Digite aqui sua sugestão ou duvida."></textarea>
-                    </label>
-                    <input type="submit" value="enviar" class="button">
-                </div>
-            </form>
+        <label for="E-mail">E-mail:
+            <b style="color:red">*</b>
+            <input type="email" placeholder="ex: homemaranha@gmail.com" id="E-mail" />
+            <span id="emailS" style="color: red;"></span>
+        </label>
+        <label for="text">Envie sua duvida ou sugestão de como melhorar o CINE HERO.
+            <b style="color:red">*</b>
+            <textarea name="" id="text" cols="30" rows="10" placeholder="Digite aqui sua sugestão ou duvida."></textarea>
+        </label>
+        <input type="submit" value="enviar" class="button">
+    </div>
+</form>
 <!-- javascript -->
 <script type="text/javascript" src="js/validacao.js"></script> 
-</body>
-</html>
