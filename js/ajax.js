@@ -26,7 +26,7 @@ function mostraResposta(ajax){//passando o elemento como parâmetro e o ajax
 		if(ajax.status == 200){
 			$.sweetModal({
 				content : ajax.responseText,
-				theme : $.sweetModal.THEME_MIXED
+				theme : $.sweetModal.THEME_MIXED,
 			});
 			document.body.className = "";
 		}else{

@@ -301,7 +301,6 @@ h2 {
 p {
 	color: #666;
 }
-
 .container {
 	width: 80%;
 	max-width: 620px;
@@ -474,5 +473,10 @@ Lab specific: scrollUp
 		margin-top: -200px;
 		font-size: 45px;
 		transition: all .5s;
+	}
+}
+@media (max-width: 400px){
+	.container{
+		width: 330px;	
 	}
 }
