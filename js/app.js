@@ -38,7 +38,6 @@ $(document).ready(function(){
             $(this).removeClass("clicado").addClass("click-me");
         }
     });
-
     //scroll UP
     $.scrollUp({
         scrollDistance: 700,

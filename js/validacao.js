@@ -11,7 +11,10 @@ $("#form").submit(function(event){
         event.preventDefault();
         $.sweetModal({
             icon : $.sweetModal.ICON_SUCCESS,
-            content : "Enviado com sucesso."
+            content : "Enviado com sucesso.",
+            timeout : 3000,
+            showCloseButton : false,
+            theme : $.sweetModal.THEME_DARK
         })
     }
 });
