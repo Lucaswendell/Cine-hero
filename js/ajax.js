@@ -19,14 +19,13 @@ function iniciandoAjax(){ //iniciando Ajax
 	return objAjax;
 }
 function mostraResposta(ajax){//passando o elemento como parâmetro e o ajax
-	if(ajax.readyState != 4){
+	if(ajax.readyState != 3){
 		document.body.className = "carregando";
 	}
 	if(ajax.readyState == 4){
 		if(ajax.status == 200){
 			$.sweetModal({
-				content : ajax.responseText,
-				theme : $.sweetModal.THEME_MIXED,
+				content : ajax.responseText
 			});
 			document.body.className = "";
 		}else{
@@ -34,7 +33,7 @@ function mostraResposta(ajax){//passando o elemento como parâmetro e o ajax
 		}
 	}
 };
-function requisitarArquivo(){
+function requisitarArquivo(elemento, arquivo){
 	var ajax = iniciandoAjax();
 	if(ajax){
 		ajax.onreadystatechange = function(){ //é executado quando o estado da requisição muda
