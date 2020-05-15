@@ -1,3 +1,3 @@
-[Trabalho js](https://lucaswendell.github.io/trabalho-js/)
+[Trabalho js](https://lucaswendell.github.io/Cine-hero/)
 ==============
 Finalizado.
